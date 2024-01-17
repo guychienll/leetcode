@@ -1,3 +1,3 @@
-import merge from './merge_sorted_array';
+import isPalindrome from './valid_palindrome';
 
-console.log(merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));
+console.log(isPalindrome('ab_a'));
