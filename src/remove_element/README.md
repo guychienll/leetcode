@@ -75,7 +75,7 @@ const removeElement = (nums, val) => {
 };
 ```
 
-> **WARNING**  
+> **NOTE**  
 > 確實有使用到 two pointer，  
 > 但題目對於 nums 內容並無要求順序，  
 > 只要求前 k 向沒有 val，  
