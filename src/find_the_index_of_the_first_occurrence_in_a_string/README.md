@@ -60,12 +60,17 @@ var strStr = function (haystack, needle) {
     let result = -1;
 
     for (let i = 0; i <= haystack.length - needle.length; i++) {
+        // 如果第一個 char 就不符合就不用繼續此次回圈了
         if (haystack[i] !== needle[0]) {
             continue;
         }
 
+        // 預設皆是找到
         let found = true;
 
+        // 因為 needle[0] 已經比較過所以這裡從 1 開始，並且找到 needle 長度結束
+        // 如果其中有任何一 char 不相等就算沒找到那 found 就是 false，並且該次 loop 不用再繼續找
+        // 皆有找到就不會進 condition
         for (let j = 1; j < needle.length; j++) {
             if (haystack[i + j] !== needle[j]) {
                 found = false;
@@ -73,6 +78,8 @@ var strStr = function (haystack, needle) {
             }
         }
 
+        // 有找到就直接跳出 loop
+        // 因為題目是要找第一個匹配的索引
         if (found) {
             result = i;
             break;
