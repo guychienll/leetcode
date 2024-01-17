@@ -75,12 +75,12 @@ const removeElement = (nums, val) => {
 };
 ```
 
-**WARNING**  
-確實有使用到 two pointer，  
-但題目對於 nums 內容並無要求順序，  
-只要求前 k 向沒有 val，  
-因此要避免 sort，  
-理應可以有更好的效能。
+> **WARNING**  
+> 確實有使用到 two pointer，  
+> 但題目對於 nums 內容並無要求順序，  
+> 只要求前 k 向沒有 val，  
+> 因此要避免 sort，  
+> 理應可以有更好的效能。
 
 ## Solution
 
